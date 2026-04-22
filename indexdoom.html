@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Colectivo Techno</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Montserrat', Arial, sans-serif;
+			background: #111;
+			color: #f5f5f5;
+		}
+		header {
+			background: #181818;
+			padding: 2rem 0 1rem 0;
+			text-align: center;
+			letter-spacing: 2px;
+		}
+		nav {
+			margin: 1rem 0;
+		}
+		nav a {
+			color: #f5f5f5;
+			text-decoration: none;
+			margin: 0 1.5rem;
+			font-weight: 700;
+			transition: color 0.2s;
+		}
+		nav a:hover {
+			color: #00ffe7;
+		}
+		section {
+			max-width: 900px;
+			margin: 2rem auto;
+			padding: 2rem;
+			background: #181818;
+			border-radius: 16px;
+			box-shadow: 0 2px 16px #0008;
+		}
+		h2 {
+			color: #00ffe7;
+			margin-top: 0;
+		}
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+			gap: 1rem;
+		}
+		.gallery img {
+			width: 100%;
+			border-radius: 8px;
+		}
+		.lineup-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+		.dj-card {
+			background: #222;
+			padding: 1rem 1.5rem;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: background 0.2s;
+		}
+		.dj-card:hover {
+			background: #00ffe7;
+			color: #181818;
+		}
+		.socials a {
+			margin: 0 0.5rem;
+			color: #00ffe7;
+			font-size: 2rem;
+			text-decoration: none;
+		}
+		.tickets-btn {
+			display: inline-block;
+			background: #00ffe7;
+			color: #181818;
+			padding: 1rem 2rem;
+			border-radius: 8px;
+			font-weight: bold;
+			text-decoration: none;
+			margin-top: 1rem;
+			transition: background 0.2s;
+		}
+		.tickets-btn:hover {
+			background: #00bfae;
+		}
+
+        .lineup-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dj-card {
+        width: 280px;
+        height:280px;
+        overflow: hidden;
+        border-radius: 8px;
+        background: black;
+        }
+
+        .dj-card img,
+        .dj-card video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.7) contrast(1.2);
+        }
+
+	</style>
+</head>
+<body>
+
+	   <header style="padding-bottom: 0; background: linear-gradient(90deg, #181818 0%, #000000 50%, #181818 100%); box-shadow: 0 4px 32px #00ffe733; position: relative; min-height: 260px;">
+		   <div style="width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; position: relative;">
+			   <img src="doom.png" alt="Logo Colectivo" style="max-height: 180px; max-width: 90vw; width: auto; height: auto; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0.95; z-index: 1;">
+		   </div>
+		   <nav>
+			   <a href="#eventos">Eventos</a>
+			   <a href="#playlist">Playlist</a>
+			   <a href="#galeria">Galería</a>
+			   <a href="#lineup">Lineup</a>
+			   <a href="#redes">Redes</a>
+			   <a href="#tickets">Tickets</a>
+               <a href="Merch">Merch</a>
+		   </nav>
+	   </header>
+
+	<section id="eventos">
+		<h2>Próximos Eventos</h2>
+
+		<ul>
+			<li>
+			19/07/2026 - DOOM x RITVALES
+			<br><br>
+
+			<video controls playsinline
+			style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 2px 16px #00ffe7aa;">
+			
+			<source src="doomritvales.mp4" type="video/mp4">
+			</video>
+
+			</li>
+		</ul>
+	</section>
+
+	<section id="playlist">
+	<h2>Playlist Oficial</h2>
+
+	<iframe
+		src="https://open.spotify.com/embed/playlist/0BNaroLhtISl3gh7QBrf9Y"
+		width="100%"
+		height="352"
+		style="border-radius:12px"
+		frameborder="0"
+		allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+		loading="lazy">
+	</iframe>
+
+	</section>
+
+	   <section id="galeria">
+		   <h2>Galería</h2>
+		   <div class="gallery" style="gap: 2rem;">
+			   <!--img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Evento 1"-->
+			   <!--img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Evento 2"-->
+			   <!--img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80" alt="Evento 3"-->
+			   <div class="ig-embed" style="grid-column: span 2; display: flex; justify-content: center;">
+				   <iframe src="https://www.instagram.com/p/DXVNWXGjIN7/embed" width="340" height="480" frameborder="0" scrolling="no" allowtransparency="true" style="border-radius: 12px; box-shadow: 0 2px 16px #00ffe7aa;"></iframe>
+			   </div>
+			   <div class="ig-embed" style="grid-column: span 2; display: flex; justify-content: center;">
+				   <iframe src="https://www.instagram.com/reel/DXZsuuEDIAE/embed" width="340" height="480" frameborder="0" scrolling="no" allowtransparency="true" style="border-radius: 12px; box-shadow: 0 2px 16px #00ffe7aa;"></iframe>
+			   </div>
+		   </div>
+	   </section>
+
+    <section id="lineup">
+        <h2>Lineup + Playlist</h2>
+        <se class="lineup-list">
+
+         <div class="dj-card">
+        <a href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6" target="_blank">
+        <img src="zonacero.jpg" alt="DJ 1">
+        </a>
+            </div>
+
+            <div class="dj-card">
+  <a href="https://open.spotify.com/playlist/4pq9lqhtWiZhzYy8bzEQTa?si=3894a61f128a4f80" target="_blank">
+    <video autoplay muted loop playsinline>
+      <source src="lineupdoomfest.mp4" type="video/mp4">
+    </video>
+  </a>
+    </div>
+    </section>        
+
+	<section id="redes">
+		<h2>Redes Sociales</h2>
+		<div class="socials">
+			<a href="https://instagram.com" target="_blank" title="Instagram">&#x1F465;</a>
+			<a href="https://facebook.com" target="_blank" title="Facebook">&#x1F426;</a>
+			<a href="https://twitter.com" target="_blank" title="Twitter">&#x1F426;</a>
+		</div>
+	</section>
+
+	<section id="tickets" style="text-align:center;">
+		<h2>Tickets</h2>
+		<a class="tickets-btn" href="https://www.tusentradas.com" target="_blank">Comprar Tickets</a>
+	</section>
+</body>
+</html>
