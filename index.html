@@ -313,7 +313,10 @@
 			   <img src="doom.png" alt="Logo Colectivo" style="max-height: 180px; max-width: 90vw; width: auto; height: auto; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0.95; z-index: 1;">
 				
 			</div>
-		   <nav>
+		   <button id="menu-toggle" aria-label="Abrir menú" style="display:none;position:absolute;top:1.5rem;right:1.5rem;z-index:10;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;">
+			   <i class="fas fa-bars"></i>
+		   </button>
+		   <nav id="main-nav">
 			   <a href="#eventos">Eventos</a>
 			   <a href="#playlist">Playlist</a>
 			   <a href="#galeria">Galería</a>
@@ -321,7 +324,6 @@
 			   <a href="#lineup">Lineup</a>
 			   <a href="#redes">Redes</a>
 			   <a href="#tickets">Tickets</a>
-               
 		   </nav>
 	</header>
 
@@ -514,4 +516,27 @@
 	</script>
 
 </body>
+<script>
+// Solo funcionalidad: contraer menú en móvil, sin cambiar estilos originales
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('main-nav');
+function checkMenuDisplay() {
+	if(window.innerWidth <= 900) {
+		menuToggle.style.display = 'block';
+		nav.style.display = 'none';
+	} else {
+		menuToggle.style.display = 'none';
+		nav.style.display = 'flex';
+	}
+}
+menuToggle.addEventListener('click', () => {
+	if(nav.style.display === 'none') {
+		nav.style.display = 'flex';
+	} else {
+		nav.style.display = 'none';
+	}
+});
+window.addEventListener('resize', checkMenuDisplay);
+window.addEventListener('DOMContentLoaded', checkMenuDisplay);
+</script>
 </html>
